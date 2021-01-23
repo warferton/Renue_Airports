@@ -1,7 +1,7 @@
 # Renue_Airports
 
 Web app built with Spring Boot
-Both have identical functionality
+
 
 <h3>About</h3>
 Takes a .csv file with airport data, parses it, and fills the local DataBase
