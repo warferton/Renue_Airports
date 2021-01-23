@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<form action="#" th:action="@{/results}" method="GET">
+    <table style="margin:2em;">
+        <tbody>
+            <tr>
+                <td>  <p>Find Airports:</p></td>
+                <td><input class="search-field" type="text" th:name="@{airportPrefix}"  method = "post" /></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="Search">Search</button></td>
+            </tr>
+            <tr>
+               <td><a th:href="@{/options}">Options</a></td>
+            </tr>
+        </tr>
+        </tbody>
+    </table>
+    <div class="output">
+
+        <table class="table table-striped" th:if="${not #lists.isEmpty(airports)}">
+            <h3>Airports Found:</h3>
+            <table class="table-out">
+                <tr th:each="airport : ${airports}">
+                    <td th:text="${airport}"></td>
+                </tr>
+            </table>
+    </div>
+</form>
+</body>
+</html>

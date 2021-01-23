@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body >
+<form action="#" th:action="@{/optionsChange}" method="GET">
+    <table style="margin:2em;">
+        <tbody>
+            <td>  <p>Set Column Number</p></td>
+            <td>  <input type="number" min="0" max="13" th:name="@{newColumns}"  method="post"></td>
+            <td>  <p th:text="'currently:' + ${columnNumber} "/></td>
+        </tr>
+        <tr>
+            <td> <p>Set Output Limit</p></td>
+            <td> <input type="number" min="1" th:name="@{newLimit}" method="post"></td>
+            <td> <p th:text="'currently:' + ${outputLimit}"/></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <a th:href="@{/}">Go Back</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

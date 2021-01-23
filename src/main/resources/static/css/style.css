@@ -1,0 +1,40 @@
+body {
+  background-color: aliceblue;
+}
+
+form {
+  margin: 5em;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+form input.search-field {
+  width: 500px;
+}
+
+form input.values {
+  width: 50px;
+}
+
+div.output {
+  background-color: white;
+}
+
+table {
+  border: 2px inline;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 5px;
+}
+table tr, h3{
+padding: 15px;
+}
+
+table.table-out td{
+border-width: 2px;
+border-collapse:collapse;
+border-color: gray;
+}
