@@ -1,6 +1,6 @@
 # Renue_Airports
 
-Shell and web app built with Spring Boot
+Web app built with Spring Boot
 Both have identical functionality
 
 <h3>About</h3>
